@@ -3,12 +3,12 @@
 
   <plurals name="wins_noun">
     <item quantity="one">%1$,d win</item>
-    <item quantity="one">%1$,d wins</item>
+    <item quantity="other">%1$,d wins</item>
   </plurals>
 
   <plurals name="plays_noun">
     <item quantity="one">%1$,d play</item>
-    <item quantity="one">%1$,d plays</item>
+    <item quantity="other">%1$,d plays</item>
   </plurals>
 
 </resources>

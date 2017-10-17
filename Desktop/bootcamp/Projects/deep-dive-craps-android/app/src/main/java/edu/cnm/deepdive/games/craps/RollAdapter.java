@@ -33,8 +33,8 @@ public class RollAdapter extends ArrayAdapter<Game.Roll> {
         = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     ConstraintLayout layout = (ConstraintLayout) inflater.inflate(resourceid,null);
     Game.Roll roll = getItem(position);
-    ((ImageView) layout.findViewById(R.id.die0View)).setImageDrawable(faces[roll.dice[0] - 1);
-    ((ImageView) layout.findViewById(R.id.die1View)).setImageDrawable(faces[roll.dice[1] - 1);
+    ((ImageView) layout.findViewById(R.id.die0View)).setImageDrawable(faces[roll.dice[0] - 1]);
+    ((ImageView) layout.findViewById(R.id.die1View)).setImageDrawable(faces[roll.dice[1] - 1]);
 
     String outcome;
     int background;
@@ -48,13 +48,13 @@ public class RollAdapter extends ArrayAdapter<Game.Roll> {
         outcome = context.getString(R.string.lose_message);
         background = Color.RED;
         break;
-      default:case
+      default:
         outcome = (roll.before == State.COME_OUT)
-            ? context.getString(R.string.point_message): "";
+            ? context.getString(R.string.point_message) : "";
       background = Color.TRANSPARENT;
-      break;;
+      break;
     }
-    ((TextView) layout.findViewById(R.id.rollView)).setText(
+    ((TextView) layout.findViewById(R.id.rollsView)).setText(
         context.getString(R.string.roll_message, roll.dice[0] + roll.dice[1]));
     ((TextView) layout.findViewById(R.id.resultView)).setText(outcome);
 

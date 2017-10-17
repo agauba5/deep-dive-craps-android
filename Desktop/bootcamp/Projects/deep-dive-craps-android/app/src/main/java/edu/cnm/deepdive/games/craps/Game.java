@@ -98,7 +98,7 @@ public class Game {
     }
 
     private Roll(int point){
-      before = State.COME_OUT;
+      before = State.POINT;
       after = before.newState(dice[0] + dice[1], point);
     }
 

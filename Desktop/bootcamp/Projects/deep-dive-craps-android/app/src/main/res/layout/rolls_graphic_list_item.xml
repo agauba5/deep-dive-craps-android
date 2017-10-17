@@ -28,14 +28,14 @@
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
     app:layout_constraintLeft_toRightOf="@+id/die0View"
-    app:layout_constraintRight_toLeftOf="@+id/rollView"
+    app:layout_constraintRight_toLeftOf="@+id/rollsView"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
     app:srcCompat="@drawable/face_4"
     />
 
   <TextView
-    android:id="@+id/rollView"
+    android:id="@+id/rollsView"
     android:layout_width="0dp"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
@@ -54,7 +54,7 @@
     android:textSize="20sp"
     android:textStyle="bold"
     android:textAlignment="textEnd"
-    app:layout_constraintLeft_toRightOf="@+id/rollView"
+    app:layout_constraintLeft_toRightOf="@+id/rollsView"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"
